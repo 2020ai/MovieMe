@@ -1,0 +1,260 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-content">
+            <div class="row">
+                <div class="col-md-11 col-xl-11">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body bg-patern-white">
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <h2 class="text-center text-white">Here Are the Results</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-11">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <div class="card-header-right">
+                                <div class="btn-group card-option">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="feather icon-more-horizontal"></i>
+                                    </button>
+                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="nav nav-pills nav-fill mt-3 border-bottom pb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <h3 class="nav-link active" id="pills-home-tab" data-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true"><i class="feather icon-film m-r-5"></i> Movie Name</h3>
+                                </li>
+                                <li class="nav-item">
+                                    <h3 class="nav-link" id="pills-news-tab" data-toggle="pill" href="#pills-news" role="tab" aria-controls="pills-news"
+                                        aria-selected="false"> </h3>
+                                </li>
+                                <li class="nav-item">
+                                    <h3 class="nav-link" id="pills-profile-tab" data-toggle="pill" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="feather icon-award m-r-5"></i> Predicted Rating</h3>
+                                </li>
+                                <li class="nav-item">
+                                    <h3 class="nav-link" id="pills-contact-tab" data-toggle="pill" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="feather icon-file-text m-r-5"></i> Total Ratings</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="table-responsive">
+                                        <div class="customer-scroll" style="height:420px;position:relative;">
+                                            <table class="table table-hover m-b-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th><span><h3><i class="feather icon-film m-r-5"></i>Movie Name</h3></span></th>
+                                                        <th><span>Predicted Rating </span></th>
+                                                        <th><span> </span></th>
+                                                        <th><span></span></th>
+                                                        <th><span></span></th>
+                                                        <th><span>Total Ratings </span></th>
+                                                        <th><span></span></th>
+                                                        <th><span> </span></th>
+                                                        <th><span></span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><h5>{{movie1}}</h5></td>
+                                                        <!-- <td></td> -->
+                                                        <td><h5>{{rating1}}</h5></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <!-- <td></td> -->
+                                                        <td><h5>{{total_rating1}}</h5></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie2}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating2}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating2}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie3}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating3}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating3}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie4}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating4}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating4}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                           
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie5}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating5}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating5}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie6}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating6}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating6}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie7}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating7}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating7}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>{{movie8}}</h5>
+                                                        </td>
+                                                        <!-- <td></td> -->
+                                                        <td>
+                                                            <h5>{{rating8}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h5>{{total_rating8}}</h5>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                                                                            
+                                                    </tr>
+                                          
+                                             
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Customer overview end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+    <!-- Apex Chart -->
+    <!-- <script src="/static/assets/js/plugins/apexcharts.min.js"></script> -->
+    <!-- custom-chart js -->
+    <!-- <script src="/static/assets/js/pages/dashboard-main.js"></script> -->
+
+{% endblock javascripts %}
