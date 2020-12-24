@@ -1,22 +1,18 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} MovieYou {% endblock %}
+{% block title %} MovieMe{% endblock %}
 
 {% block content %} 
 
-<!-- <link rel="stylesheet" href="/static/assets/css/style.css" type="text/css">
-<link rel="stylesheet" href="style.css" type="text/css"> -->
-<!-- [ auth-signin ] start -->
+<link rel="stylesheet" href="/static/assets/css/style.css" >
 	<!-- <div class="auth-wrapper"> -->
-		<div class="auth-content">
-			<div class="card">
+		<div class="pcoded-main-container">
+			<div class="pcoded-content">
 				<div class="row align-items-center text-center">
-					<div class="col-md-6">
-						<div class="card-body">
-
-							<!-- <img src="/static/assets/images/logo-dark.png" alt="" class="img-fluid mb-4"> -->
+					<!-- <div class="col-md-2"></div> -->
+					<div class="col-md-12">
 							<h4 class="mb-3 f-w-400">
-								<a>MovieYou</a>
+								<a>MovieMe</a>
 							</h4>
 							<!-- dummy spacer -->
 							<p> <br /> </p>		
@@ -24,174 +20,206 @@
 							<form method="post" action="">
 								
 								<div class="input-group mb-4">
+									<div class="col-md-5">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text">Star Wars (1977)</span>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="rating">
+											<p> <br /> </p>
+											<input type="radio" id="Movie1-5" name="Movie1" value="5" /><label for="Movie1-5" title="Rocks!"></label>
+											<input type="radio" id="Movie1-4" name="Movie1" value="4" /><label for="Movie1-4" title="Pretty good"></label>
+											<input type="radio" id="Movie1-3" name="Movie1" value="3" /><label for="Movie1-3" title="Meh"></label>
+											<input type="radio" id="Movie1-2" name="Movie1" value="2" /><label for="Movie1-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie1-1" name="Movie1" value="1" /><label for="Movie1-1" title="Sucks big time"></label>
+										</div>
+									</div>
+								</div>
+
+								<div class="input-group mb-4">
+									<div class="col-md-5">
 									<div class="input-group-prepend">
-										<!-- <img src="/static/assets/images/Star-wars-logo.jpg" alt="" class="feather icon-user"> -->
 										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
 												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Star Wars (1977)</span>
+										<span class="input-group-text">Toy Story (1995)</span>
 									</div>
-									<!-- <input type="text" class="form-control" id="Movie1" name="Movie1" placeholder="Star Wars (1977)"> -->
-									<div > 
-									<label>
-										<input type="radio" id="Movie1" name="Movie1" value="1" />
-										<span class="icon">★</span>
-									</label>
 									</div>
-									<label>
-										<input type="radio" id="Movie1" name="Movie1" value="2" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie1" name="Movie1" value="3" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie1" name="Movie1" value="4" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie1" name="Movie1" value="5" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-								</div>
-								<!-- <div class="input-group mb-4">
-									<span><img src="/static/assets/images/Star-wars-logo.jpg" alt="" style="width:100px;height:100px; float:left"></span>
-									<span class="input-group-text">Toy Story (1995)</span>
-									<div>
-										<label>
-											<input type="radio" id="Movie2" name="Movie2" value="1" />
-											<span class="icon">★</span>
-										</label>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie2-5" name="Movie2" value="5" /><label for="Movie2-5" title="Rocks!"></label>
+										<input type="radio" id="Movie2-4" name="Movie2" value="4" /><label for="Movie2-4" title="Pretty good"></label>
+										<input type="radio" id="Movie2-3" name="Movie2" value="3" /><label for="Movie2-3" title="Meh"></label>
+										<input type="radio" id="Movie2-2" name="Movie2" value="2" /><label for="Movie2-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie2-1" name="Movie2" value="1" /><label for="Movie2-1" title="Sucks big time"></label>
 									</div>
-									<label>
-										<input type="radio" id="Movie2" name="Movie2" value="2" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie2" name="Movie2" value="3" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie2" name="Movie2" value="4" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
-									<label>
-										<input type="radio" id="Movie2" name="Movie2" value="5" />
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-										<span class="icon">★</span>
-									</label>
 									</div>
-								</div> -->
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																										<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																									</div> -->
-									<input type="text" class="form-control" id="Movie2" name="Movie2" placeholder="Toy Story (1995)">
 								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																		<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																	</div> -->
-									<input type="text" class="form-control" id="Movie3" name="Movie3" placeholder="Leaving Las Vegas (1995)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																		<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																	</div> -->
-									<input type="text" class="form-control" id="Movie4" name="Movie4" placeholder="Pulp Fiction (1994)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																		<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																	</div> -->
-									<input type="text" class="form-control" id="Movie5" name="Movie5" placeholder="Godfather, The (1972)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																		<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																	</div> -->
-									<input type="text" class="form-control" id="Movie6" name="Movie6" placeholder="Usual Suspects, The (1995)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																										<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																									</div> -->
-									<input type="text" class="form-control" id="Movie7" name="Movie7" placeholder="Casino (1995)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																										<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																									</div> -->
-									<input type="text" class="form-control" id="Movie8" name="Movie8" placeholder="Twelve Monkeys (a.k.a. 12 Monkeys) (1995)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																										<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																									</div> -->
-									<input type="text" class="form-control" id="Movie9" name="Movie9" placeholder="Flintstones, The (1994)">
-								</div>
-								<div class="input-group mb-4">
-									<!-- <div class="input-group-prepend">
-																										<span class="input-group-text"><i class="feather icon-lock"></i></span>
-																									</div> -->
-									<input type="text" class="form-control" id="Movie10" name="Movie10" placeholder="Timecop (1994)">
-								</div>
-								<!-- <div class="form-group text-left mt-2">
-									<div class="checkbox checkbox-primary d-inline">
-										<input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-										<label for="checkbox-fill-a1" class="cr"> Save credentials</label>
-									</div>
-								</div> -->
-								<button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
-							
-							</form>
-							<!-- <fieldset>
-								<legend>Please rate:</legend>
-								<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-								<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-								<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-								<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-								<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-							</fieldset> -->
 
-							<!-- <p class="mb-2 text-muted">
-								<br />
-								&copy; <a target="_blank" rel="noopener" href="https://codedthemes.com/?ref=appseed" class="f-w-400">CodedThemes</a>
-								- coded by <a target="_blank" rel="noopener" href="https://appseed.us" class="f-w-400">AppSeed</a>
-							</p> -->
-						</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text">Leaving Las Vegas (1995)</span>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="rating">
+											<p> <br /> </p>
+											<input type="radio" id="Movie3-5" name="Movie3" value="5" /><label for="Movie3-5" title="Rocks!"></label>
+											<input type="radio" id="Movie3-4" name="Movie3" value="4" /><label for="Movie3-4" title="Pretty good"></label>
+											<input type="radio" id="Movie3-3" name="Movie3" value="3" /><label for="Movie3-3" title="Meh"></label>
+											<input type="radio" id="Movie3-2" name="Movie3" value="2" /><label for="Movie3-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie3-1" name="Movie3" value="1" /><label for="Movie3-1" title="Sucks big time"></label>
+										</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text">Pulp Fiction (1994)</span>
+										</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie4-5" name="Movie4" value="5" /><label for="Movie4-5" title="Rocks!"></label>
+										<input type="radio" id="Movie4-4" name="Movie4" value="4" /><label for="Movie4-4" title="Pretty good"></label>
+										<input type="radio" id="Movie4-3" name="Movie4" value="3" /><label for="Movie4-3" title="Meh"></label>
+										<input type="radio" id="Movie4-2" name="Movie4" value="2" /><label for="Movie4-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie4-1" name="Movie4" value="1" /><label for="Movie4-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Godfather, The (1972)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie5-5" name="Movie5" value="5" /><label for="Movie5-5" title="Rocks!"></label>
+										<input type="radio" id="Movie5-4" name="Movie5" value="4" /><label for="Movie5-4" title="Pretty good"></label>
+										<input type="radio" id="Movie5-3" name="Movie5" value="3" /><label for="Movie5-3" title="Meh"></label>
+										<input type="radio" id="Movie5-2" name="Movie5" value="2" /><label for="Movie5-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie5-1" name="Movie5" value="1" /><label for="Movie5-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Usual Suspects, The (1995)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie6-5" name="Movie6" value="5" /><label for="Movie6-5" title="Rocks!"></label>
+										<input type="radio" id="Movie6-4" name="Movie6" value="4" /><label for="Movie6-4" title="Pretty good"></label>
+										<input type="radio" id="Movie6-3" name="Movie6" value="3" /><label for="Movie6-3" title="Meh"></label>
+										<input type="radio" id="Movie6-2" name="Movie6" value="2" /><label for="Movie6-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie6-1" name="Movie6" value="1" /><label for="Movie6-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Casino (1995)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie7-5" name="Movie7" value="5" /><label for="Movie7-5" title="Rocks!"></label>
+										<input type="radio" id="Movie7-4" name="Movie7" value="4" /><label for="Movie7-4" title="Pretty good"></label>
+										<input type="radio" id="Movie7-3" name="Movie7" value="3" /><label for="Movie7-3" title="Meh"></label>
+										<input type="radio" id="Movie7-2" name="Movie7" value="2" /><label for="Movie7-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie7-1" name="Movie7" value="1" /><label for="Movie7-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Twelve Monkeys (a.k.a. 12 Monkeys) (1995)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie8-5" name="Movie8" value="5" /><label for="Movie8-5" title="Rocks!"></label>
+										<input type="radio" id="Movie8-4" name="Movie8" value="4" /><label for="Movie8-4" title="Pretty good"></label>
+										<input type="radio" id="Movie8-3" name="Movie8" value="3" /><label for="Movie8-3" title="Meh"></label>
+										<input type="radio" id="Movie8-2" name="Movie8" value="2" /><label for="Movie8-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie8-1" name="Movie8" value="1" /><label for="Movie8-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Flintstones, The (1994)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie9-5" name="Movie9" value="5" /><label for="Movie9-5" title="Rocks!"></label>
+										<input type="radio" id="Movie9-4" name="Movie9" value="4" /><label for="Movie9-4" title="Pretty good"></label>
+										<input type="radio" id="Movie9-3" name="Movie9" value="3" /><label for="Movie9-3" title="Meh"></label>
+										<input type="radio" id="Movie9-2" name="Movie9" value="2" /><label for="Movie9-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie9-1" name="Movie9" value="1" /><label for="Movie9-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<div class="input-group mb-4">
+									<div class="col-md-5">
+									<div class="input-group-prepend">
+										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+												style="width:100px;height:100px; float:left"></span>
+										<span class="input-group-text">Timecop (1994)</span>
+									</div>
+									</div>
+									<div class="col-md-3">
+									<div class="rating">
+										<p> <br /> </p>
+										<input type="radio" id="Movie10-5" name="Movie10" value="5" /><label for="Movie10-5" title="Rocks!"></label>
+										<input type="radio" id="Movie10-4" name="Movie10" value="4" /><label for="Movie10-4" title="Pretty good"></label>
+										<input type="radio" id="Movie10-3" name="Movie10" value="3" /><label for="Movie10-3" title="Meh"></label>
+										<input type="radio" id="Movie10-2" name="Movie10" value="2" /><label for="Movie10-2" title="Kinda bad"></label>
+										<input type="radio" id="Movie10-1" name="Movie10" value="1" /><label for="Movie10-1" title="Sucks big time"></label>
+									</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
+							</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	<!-- </div> -->
-	<!-- [ auth-signin ] end -->
 
 {% endblock content %}
-<!-- Specific CSS goes HERE -->
-<!-- {% block stylesheets %}
-
-<link rel="stylesheet" href="/static/assets/css/style.css" type="text/css">
-{% endblock stylesheets %} -->
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}

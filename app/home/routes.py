@@ -26,12 +26,13 @@ def getRatings():
         movie_id_dict = {'Movie1': 260, 'Movie2': 1, 'Movie3': 25, 
         'Movie4': 296, 'Movie5': 585, 'Movie6': 50, 'Movie7': 16, 
         'Movie8': 32, 'Movie9': 335, 'Movie10': 379}
+        print('---------', request.form)
         # get the user's ratings
         user_ratings = [(0, int(movie_id_dict[rating]), int(request.form[rating]))
                         for rating in request.form if request.form[rating] != '']
         print('++++++++++user ratings:', user_ratings)
         # initiate the model
-        moviefy = MovieFy.MovieFy('ml-latest-small')
+        moviefy = MovieFy.MovieFy('dataset')
         REC_MOVIES = moviefy.run(user_ratings)
         print('------', REC_MOVIES)
         # user_ratings = [
@@ -46,7 +47,6 @@ def getRatings():
         #     (0, 335, 1),  # Flintstones, The (1994)
         #     (0, 379, 1),  # Timecop (1994)
         # ]
-        # movie1_rating = request.form['Movie1']
         return redirect(url_for('home_blueprint.index'))
     else:
         return render_template('login.html')

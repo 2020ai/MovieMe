@@ -22123,7 +22123,7 @@ pre[class*=language-]:before {
     float: unset;
     right: 0;
     top: 0;
-    margin-left: 235px;
+    margin-left: 35px;
     min-height: 100vh;
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
@@ -26486,6 +26486,8 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
 }
 
 
+/* Rating */
+
 .rating {
     float:left;
 }
@@ -26541,6 +26543,9 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
     top:2px;
     left:2px;
 }
+
+
+
 
 /* image varient End */
 /**====== Authentication css end ======**/
