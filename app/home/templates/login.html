@@ -11,25 +11,34 @@
 				<div class="row align-items-center text-center">
 					<!-- <div class="col-md-2"></div> -->
 					<div class="col-md-12">
-							<h4 class="mb-3 f-w-400">
-								<a>MovieMe</a>
-							</h4>
+						<div class="input-group mb-2">
+							<div class="col-md-3">
+								<h4 class="mb-3 f-w-400">
+									<a class="b-brand">
+										<img src="/static/assets/images/MovieMe-edited4.jpg" alt="" class="logo">
+									</a>
+								</h4>
+							</div>	
+							<div class="col-md-5">
+								<h3>
+									<p style="text-align:left"> <br> <br> <br> Please rate the following movies. <br> You need to rate at least 3 movies to proceed with the recommendations. </p>
+								</h3>
+							</div>
+						</div>
 							<!-- dummy spacer -->
 							<p> <br /> </p>		
-							<p> Please rate the following movies. You need to rate at least 3 movies to proceed with the recommendations. </p>
+							
 							<form method="post" action="">
-								
+
+<!-- ######################################## row1 ###################### -->
 								<div class="input-group mb-4">
-									<div class="col-md-5">
-										<div class="input-group-prepend">
-											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-													style="width:100px;height:100px; float:left"></span>
-											<span class="input-group-text">The Shawshank Redemption (1994)</span>
-										</div>
-									</div>
 									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/Shawshank.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0111161/?ref_=fn_al_tt_1' target="_blank">The Shawshank <br> Redemption (1994)</a></span>
+										</div>
 										<div class="rating">
-											<p> <br /> </p>
 											<input type="radio" id="Movie1-5" name="Movie1" value="5" /><label for="Movie1-5" title="Rocks!"></label>
 											<input type="radio" id="Movie1-4" name="Movie1" value="4" /><label for="Movie1-4" title="Pretty good"></label>
 											<input type="radio" id="Movie1-3" name="Movie1" value="3" /><label for="Movie1-3" title="Meh"></label>
@@ -37,39 +46,28 @@
 											<input type="radio" id="Movie1-1" name="Movie1" value="1" /><label for="Movie1-1" title="Sucks big time"></label>
 										</div>
 									</div>
-								</div>
-
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">The Godfather (1972)</span>
-									</div>
-									</div>
+								
 									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie2-5" name="Movie2" value="5" /><label for="Movie2-5" title="Rocks!"></label>
-										<input type="radio" id="Movie2-4" name="Movie2" value="4" /><label for="Movie2-4" title="Pretty good"></label>
-										<input type="radio" id="Movie2-3" name="Movie2" value="3" /><label for="Movie2-3" title="Meh"></label>
-										<input type="radio" id="Movie2-2" name="Movie2" value="2" /><label for="Movie2-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie2-1" name="Movie2" value="1" /><label for="Movie2-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-
-								<div class="input-group mb-4">
-									<div class="col-md-5">
 										<div class="input-group-prepend">
-											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+											<span><img src="/static/assets/images/the-godfather.png" alt=""
 													style="width:100px;height:100px; float:left"></span>
-											<span class="input-group-text">The Dark Knight (2008)</span>
+											<span class="input-group-text" ><a href='https://www.imdb.com/title/tt0068646/?ref_=nv_sr_srsg_0' target="_blank">The Godfather (1972)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie2-5" name="Movie2" value="5" /><label for="Movie2-5" title="Rocks!"></label>
+											<input type="radio" id="Movie2-4" name="Movie2" value="4" /><label for="Movie2-4" title="Pretty good"></label>
+											<input type="radio" id="Movie2-3" name="Movie2" value="3" /><label for="Movie2-3" title="Meh"></label>
+											<input type="radio" id="Movie2-2" name="Movie2" value="2" /><label for="Movie2-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie2-1" name="Movie2" value="1" /><label for="Movie2-1" title="Sucks big time"></label>
 										</div>
 									</div>
 									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/dark-knight.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0468569/?ref_=nv_sr_srsg_0' target="_blank">The Dark Knight (2008)</a></span>
+										</div>
 										<div class="rating">
-											<p> <br /> </p>
 											<input type="radio" id="Movie3-5" name="Movie3" value="5" /><label for="Movie3-5" title="Rocks!"></label>
 											<input type="radio" id="Movie3-4" name="Movie3" value="4" /><label for="Movie3-4" title="Pretty good"></label>
 											<input type="radio" id="Movie3-3" name="Movie3" value="3" /><label for="Movie3-3" title="Meh"></label>
@@ -77,151 +75,76 @@
 											<input type="radio" id="Movie3-1" name="Movie3" value="1" /><label for="Movie3-1" title="Sucks big time"></label>
 										</div>
 									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
+
+									<div class="col-md-3">
 										<div class="input-group-prepend">
-											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
+											<span><img src="/static/assets/images/lord-of-the-ring.png" alt=""
 													style="width:100px;height:100px; float:left"></span>
-											<span class="input-group-text">The Lord of the Rings: The Return of the King (2003)</span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0167260/?ref_=nv_sr_srsg_3' target="_blank">The Lord of the Rings: <br> The Return of the King (2003)</a></span>
 										</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie4-5" name="Movie4" value="5" /><label for="Movie4-5" title="Rocks!"></label>
-										<input type="radio" id="Movie4-4" name="Movie4" value="4" /><label for="Movie4-4" title="Pretty good"></label>
-										<input type="radio" id="Movie4-3" name="Movie4" value="3" /><label for="Movie4-3" title="Meh"></label>
-										<input type="radio" id="Movie4-2" name="Movie4" value="2" /><label for="Movie4-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie4-1" name="Movie4" value="1" /><label for="Movie4-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Schindler's List (1993)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie5-5" name="Movie5" value="5" /><label for="Movie5-5" title="Rocks!"></label>
-										<input type="radio" id="Movie5-4" name="Movie5" value="4" /><label for="Movie5-4" title="Pretty good"></label>
-										<input type="radio" id="Movie5-3" name="Movie5" value="3" /><label for="Movie5-3" title="Meh"></label>
-										<input type="radio" id="Movie5-2" name="Movie5" value="2" /><label for="Movie5-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie5-1" name="Movie5" value="1" /><label for="Movie5-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Inception (2010)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie6-5" name="Movie6" value="5" /><label for="Movie6-5" title="Rocks!"></label>
-										<input type="radio" id="Movie6-4" name="Movie6" value="4" /><label for="Movie6-4" title="Pretty good"></label>
-										<input type="radio" id="Movie6-3" name="Movie6" value="3" /><label for="Movie6-3" title="Meh"></label>
-										<input type="radio" id="Movie6-2" name="Movie6" value="2" /><label for="Movie6-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie6-1" name="Movie6" value="1" /><label for="Movie6-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Forrest Gump (1994)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie7-5" name="Movie7" value="5" /><label for="Movie7-5" title="Rocks!"></label>
-										<input type="radio" id="Movie7-4" name="Movie7" value="4" /><label for="Movie7-4" title="Pretty good"></label>
-										<input type="radio" id="Movie7-3" name="Movie7" value="3" /><label for="Movie7-3" title="Meh"></label>
-										<input type="radio" id="Movie7-2" name="Movie7" value="2" /><label for="Movie7-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie7-1" name="Movie7" value="1" /><label for="Movie7-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Star Wars: Episode V - The Empire Strikes Back (1980)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie8-5" name="Movie8" value="5" /><label for="Movie8-5" title="Rocks!"></label>
-										<input type="radio" id="Movie8-4" name="Movie8" value="4" /><label for="Movie8-4" title="Pretty good"></label>
-										<input type="radio" id="Movie8-3" name="Movie8" value="3" /><label for="Movie8-3" title="Meh"></label>
-										<input type="radio" id="Movie8-2" name="Movie8" value="2" /><label for="Movie8-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie8-1" name="Movie8" value="1" /><label for="Movie8-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">Life Is Beautiful (1997)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie9-5" name="Movie9" value="5" /><label for="Movie9-5" title="Rocks!"></label>
-										<input type="radio" id="Movie9-4" name="Movie9" value="4" /><label for="Movie9-4" title="Pretty good"></label>
-										<input type="radio" id="Movie9-3" name="Movie9" value="3" /><label for="Movie9-3" title="Meh"></label>
-										<input type="radio" id="Movie9-2" name="Movie9" value="2" /><label for="Movie9-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie9-1" name="Movie9" value="1" /><label for="Movie9-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-									<div class="input-group-prepend">
-										<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-												style="width:100px;height:100px; float:left"></span>
-										<span class="input-group-text">The Lion King (1994)</span>
-									</div>
-									</div>
-									<div class="col-md-3">
-									<div class="rating">
-										<p> <br /> </p>
-										<input type="radio" id="Movie10-5" name="Movie10" value="5" /><label for="Movie10-5" title="Rocks!"></label>
-										<input type="radio" id="Movie10-4" name="Movie10" value="4" /><label for="Movie10-4" title="Pretty good"></label>
-										<input type="radio" id="Movie10-3" name="Movie10" value="3" /><label for="Movie10-3" title="Meh"></label>
-										<input type="radio" id="Movie10-2" name="Movie10" value="2" /><label for="Movie10-2" title="Kinda bad"></label>
-										<input type="radio" id="Movie10-1" name="Movie10" value="1" /><label for="Movie10-1" title="Sucks big time"></label>
-									</div>
-									</div>
-								</div>
-								<div class="input-group mb-4">
-									<div class="col-md-5">
-										<div class="input-group-prepend">
-											<span><img src="/static/assets/images/Star-wars-logo.jpg" alt=""
-													style="width:100px;height:100px; float:left"></span>
-											<span class="input-group-text">The Pianist (2002)</span>
-										</div>
-									</div>
-									<div class="col-md-3">
 										<div class="rating">
-											<p> <br /> </p>
+											<input type="radio" id="Movie4-5" name="Movie4" value="5" /><label for="Movie4-5" title="Rocks!"></label>
+											<input type="radio" id="Movie4-4" name="Movie4" value="4" /><label for="Movie4-4" title="Pretty good"></label>
+											<input type="radio" id="Movie4-3" name="Movie4" value="3" /><label for="Movie4-3" title="Meh"></label>
+											<input type="radio" id="Movie4-2" name="Movie4" value="2" /><label for="Movie4-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie4-1" name="Movie4" value="1" /><label for="Movie4-1" title="Sucks big time"></label>
+										</div>
+									</div>
+
+								</div>
+<!-- ######################################## row2 ###################### -->
+								<div class="input-group mb-4">
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/schindler.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0108052/?ref_=nv_sr_srsg_0' target="_blank">Schindler's List (1993)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie5-5" name="Movie5" value="5" /><label for="Movie5-5" title="Rocks!"></label>
+											<input type="radio" id="Movie5-4" name="Movie5" value="4" /><label for="Movie5-4" title="Pretty good"></label>
+											<input type="radio" id="Movie5-3" name="Movie5" value="3" /><label for="Movie5-3" title="Meh"></label>
+											<input type="radio" id="Movie5-2" name="Movie5" value="2" /><label for="Movie5-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie5-1" name="Movie5" value="1" /><label for="Movie5-1" title="Sucks big time"></label>
+										</div>
+									</div>
+								
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/inception.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0' target="_blank">Inception (2010)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie6-5" name="Movie6" value="5" /><label for="Movie6-5" title="Rocks!"></label>
+											<input type="radio" id="Movie6-4" name="Movie6" value="4" /><label for="Movie6-4" title="Pretty good"></label>
+											<input type="radio" id="Movie6-3" name="Movie6" value="3" /><label for="Movie6-3" title="Meh"></label>
+											<input type="radio" id="Movie6-2" name="Movie6" value="2" /><label for="Movie6-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie6-1" name="Movie6" value="1" /><label for="Movie6-1" title="Sucks big time"></label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/forest-gump.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0109830/?ref_=nv_sr_srsg_0' target="_blank">Forrest Gump (1994)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie7-5" name="Movie7" value="5" /><label for="Movie7-5" title="Rocks!"></label>
+											<input type="radio" id="Movie7-4" name="Movie7" value="4" /><label for="Movie7-4" title="Pretty good"></label>
+											<input type="radio" id="Movie7-3" name="Movie7" value="3" /><label for="Movie7-3" title="Meh"></label>
+											<input type="radio" id="Movie7-2" name="Movie7" value="2" /><label for="Movie7-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie7-1" name="Movie7" value="1" /><label for="Movie7-1" title="Sucks big time"></label>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/pianist.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0253474/?ref_=nv_sr_srsg_0' target="_blank">The Pianist (2002)</a></span>
+										</div>
+										<div class="rating">
 											<input type="radio" id="Movie11-5" name="Movie11" value="5" /><label for="Movie11-5" title="Rocks!"></label>
 											<input type="radio" id="Movie11-4" name="Movie11" value="4" /><label for="Movie11-4" title="Pretty good"></label>
 											<input type="radio" id="Movie11-3" name="Movie11" value="3" /><label for="Movie11-3" title="Meh"></label>
@@ -230,43 +153,112 @@
 												title="Sucks big time"></label>
 										</div>
 									</div>
+
+								</div>
+<!-- ######################################## row3 ######################					 -->
+								<div class="input-group mb-4">
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/starwars.jpg" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0080684/?ref_=nv_sr_srsg_0' target="_blank">Star Wars: Episode V - <br> The Empire Strikes Back (1980)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie8-5" name="Movie8" value="5" /><label for="Movie8-5" title="Rocks!"></label>
+											<input type="radio" id="Movie8-4" name="Movie8" value="4" /><label for="Movie8-4" title="Pretty good"></label>
+											<input type="radio" id="Movie8-3" name="Movie8" value="3" /><label for="Movie8-3" title="Meh"></label>
+											<input type="radio" id="Movie8-2" name="Movie8" value="2" /><label for="Movie8-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie8-1" name="Movie8" value="1" /><label for="Movie8-1" title="Sucks big time"></label>
+										</div>
+									</div>
+								
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/life-is-beautiful.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0118799/?ref_=nv_sr_srsg_0' target="_blank">Life Is Beautiful (1997)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie9-5" name="Movie9" value="5" /><label for="Movie9-5" title="Rocks!"></label>
+											<input type="radio" id="Movie9-4" name="Movie9" value="4" /><label for="Movie9-4" title="Pretty good"></label>
+											<input type="radio" id="Movie9-3" name="Movie9" value="3" /><label for="Movie9-3" title="Meh"></label>
+											<input type="radio" id="Movie9-2" name="Movie9" value="2" /><label for="Movie9-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie9-1" name="Movie9" value="1" /><label for="Movie9-1" title="Sucks big time"></label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/lion-king.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0110357/?ref_=nv_sr_srsg_3' target="_blank">The Lion King (1994)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie10-5" name="Movie10" value="5" /><label for="Movie10-5" title="Rocks!"></label>
+											<input type="radio" id="Movie10-4" name="Movie10" value="4" /><label for="Movie10-4" title="Pretty good"></label>
+											<input type="radio" id="Movie10-3" name="Movie10" value="3" /><label for="Movie10-3" title="Meh"></label>
+											<input type="radio" id="Movie10-2" name="Movie10" value="2" /><label for="Movie10-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie10-1" name="Movie10" value="1" /><label for="Movie10-1" title="Sucks big time"></label>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="input-group-prepend">
+											<span><img src="/static/assets/images/fight-club.png" alt=""
+													style="width:100px;height:100px; float:left"></span>
+											<span class="input-group-text"><a href='https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0' target="_blank">Fight Club (1999)</a></span>
+										</div>
+										<div class="rating">
+											<input type="radio" id="Movie12-5" name="Movie12" value="5" /><label for="Movie12-5" title="Rocks!"></label>
+											<input type="radio" id="Movie12-4" name="Movie12" value="4" /><label for="Movie12-4" title="Pretty good"></label>
+											<input type="radio" id="Movie12-3" name="Movie12" value="3" /><label for="Movie12-3" title="Meh"></label>
+											<input type="radio" id="Movie12-2" name="Movie12" value="2" /><label for="Movie12-2" title="Kinda bad"></label>
+											<input type="radio" id="Movie12-1" name="Movie12" value="1" /><label for="Movie12-1"
+												title="Sucks big time"></label>
+										</div>
+									</div>
+
 								</div>
 								<button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
 							</form>
-							
+							<p> <br> </p>
 							<div class="input-group mb-4">
-								<div class="col-md-2">
-									<img src="/static/assets/images/SL.png" style="width:200px;height:200px; float:left">
-								</div>
-								<div class="col-md-2">
-									<h4><a class="nav-link" target="_blank" href="https://shayanliaghat.github.io/">
-										Shayan Liaghat
-									</a></h4>
+                                <div class="col-md-2">
+                                    <img src="/static/assets/images/SL.png" style="width:200px;height:200px; float:left">
+                                </div>
+                                <div class="col-md-2">
+                                    <h4><a>
+                                        Shayan Liaghat
+                                    </a></h4>
+									<a class="nav-link" target="_blank" href="https://shayanliaghat.github.io/">
+                                        Personal Website
+                                    </a>
 									<a class="nav-link" target="_blank" href="https://www.linkedin.com/in/shayanliaghat/">
-										Linkedin
-									</a>
-									<a class="nav-link" target="_blank" href="https://github.com/ShayanLiaghat">
-										GitHub
-									</a>
-								</div>
-								<div class="col-md-2">
-								</div>
-								<div class="col-md-2">
-									<img src="/static/assets/images/SA.jpg" alt="" style="width:200px;height:200px; float:left">
-								</div>
-								<div class="col-md-2">
-									<h4><a class="nav-link" target="_blank" href="https://saro0o00oo.github.io/">
-										Sara Alizadeh
-									</a></h4>
+                                        Linkedin
+                                    </a>
+                                    <a class="nav-link" target="_blank" href="https://github.com/ShayanLiaghat">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="/static/assets/images/SA.jpg" alt="" style="width:200px;height:200px; float:left">
+                                </div>
+                                <div class="col-md-2">
+                                    <h4><a>
+                                        Sara Alizadeh
+                                    </a></h4>
+									<a class="nav-link" target="_blank" href="https://saro0o00oo.github.io/">
+                                        Personal Website
+                                    </a>
 									<a class="nav-link" target="_blank" href="https://www.linkedin.com/in/sara-alizadeh72/">
-										Linkedin
-									</a>
-									<a class="nav-link" target="_blank" href="https://github.com/saro0o00oo">
-										GitHub
-									</a>
-								</div>
-							</div>
-						
+                                        Linkedin
+                                    </a>
+                                    <a class="nav-link" target="_blank" href="https://github.com/saro0o00oo">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
 					</div>
 				</div>
 			</div>

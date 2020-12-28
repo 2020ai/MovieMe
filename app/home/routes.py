@@ -21,29 +21,23 @@ def getRatings():
     if request.method == 'GET':
         return render_template('login.html')
     elif request.method == 'POST':
-        # a dictionary of movies' ID in the dataset
-            # 1 The Shawshank Redemption(1994) 318
-            # 2 The Godfather(1972) 858
-            # 3 The Dark Knight(2008)  58559
-            # 4 The Lord of the Rings: The Return of the King(2003) 7153
-            # 5 Schindler's List(1993) 527
-            # 6 Inception(2010) 79132
-            # 7 Forrest Gump(1994) 356
-            # 8 Star Wars: Episode V - The Empire Strikes Back(1980) 1196
-            # 9 Life Is Beautiful(1997) 2324
-            # 10 The Lion King(1994) 364
-            # 11 The Pianist(2002) 5995
+        movie_name_dict = {318:"Shawshank Redemption, The (1994)", 858:'Godfather, The (1972)' , 58559:'Dark Knight, The (2008)', 
+        7153:'Lord of the Rings: The Return of the King, The (2003)', 527:'Schindler\'s List (1993)', 79132:'Inception (2010)',
+        356:'Forrest Gump (1994)', 1196:'Star Wars: Episode V - The Empire Strikes Back (1980)', 2324:'Life Is Beautiful (La Vita è bella) (1997)',
+        364:'Lion King, The (1994)', 5995:'Pianist, The (2002)', 2959:'Fight Club (1999)'}
+
         movie_id_dict = {'Movie1': 318, 'Movie2': 858, 'Movie3': 58559,
                          'Movie4': 7153, 'Movie5': 527, 'Movie6': 79132, 'Movie7': 356,
-                         'Movie8': 1196, 'Movie9': 2324, 'Movie10': 364, 'Movie11': 5995}
+                         'Movie8': 1196, 'Movie9': 2324, 'Movie10': 364, 'Movie11': 5995, 'Movie12': 2959}
         # get the user's ratings
         user_ratings = [(0, int(movie_id_dict[rating]), int(request.form[rating]))
                         for rating in request.form if request.form[rating] != '']
         print('++++++++++user ratings:', user_ratings)
         # initiate the model
         movieme = MovieMe.MovieMe('dataset')
-        REC_MOVIES = movieme.run(user_ratings)
-        print('++++++++++recommended movies', REC_MOVIES)
+        rec_movies_unfiltered = movieme.run(user_ratings)
+        REC_MOVIES = [x for x in rec_movies_unfiltered if x[0] not in [movie_name_dict[r[1]] for r in user_ratings]]
+        print('++++++++++recommended movies: ', REC_MOVIES)
         return redirect(url_for('home_blueprint.index'))
     else:
         return render_template('login.html')
