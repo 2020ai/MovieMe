@@ -4,9 +4,9 @@
 
 ## Description
 
-MovieMe is an end-to-end web application using Apache Spark, Flask, and Elastic Beanstalk using the [MovieLens](https://movielens.org/)  dataset to build a recommender system using collaborative filtering with Spark. The app can be accessed from the following link: http://movieme.eba-xeb4i3qf.us-east-2.elasticbeanstalk.com/
+MovieMe is an end-to-end Recommender System web application using Apache Spark, Flask, and Elastic Beanstalk using the [MovieLens](https://movielens.org/)  dataset and collaborative filtering with Spark's Alternating Least Squares implementation. The app can be accessed from the following link: http://movieme.eba-xeb4i3qf.us-east-2.elasticbeanstalk.com/
 
-
+We defined a timeline of two weeks for the whole project from end to end. 
 
 <table>
   <tr>
@@ -24,7 +24,7 @@ MovieMe is an end-to-end web application using Apache Spark, Flask, and Elastic 
      <td></td>
   </tr>
   <tr>
-    <td><img src="app/base/static/assets/imgages/screencapture-movieme-page2.png" ></td>
+    <td><img src="app/base/static/assets/images/screencapture-movieme-page2.png" ></td>
   </tr>
  </table>
 
@@ -38,9 +38,18 @@ This Readme file has the following sections:
 
 ## 1. Project Organization <a id='ProjectOrganization'></a>
 
-### 1.1. 
+The pipeline is written as a Python module named MovieMe which is located under app/home directory. This module contains all the necessary functionality from reading the data to building the recommender system and predicting the results.
 
+Here is the different parts of the MovieMe module:
 
+### 1.1. Spark Context Initialization and Reading data
+
+### 1.2. Counting and Averaging Movies' Ratings
+`ratings_count_avg` method
+### 1.3. Training the Recommender System Model
+`train_recommender` and `predict_recommender` methods
+### 1.4. Adding New User's Ratings and Making Prediction  
+`add_new_user_ratings` and `predict_top_ratings` methods
 
 
 <br />
@@ -256,6 +265,19 @@ Environment creation takes about 5 minutes.
 
 This will open a browser window using the domain name created for your application. 
 
+5- Resolve the issues on the fly
+
+When deployed the ELB, we git MemorryError when installing PySpark library. We needed to remove pyspark from requirments.txt and install it manually on the EC2 instance using ```--no-cache-dir``` option:
+
+```bash
+~/opt/python/run/venv/bin/pip install pyspark==3.0.1 --no-cache-dir
+```
+We also needed to upgrade Java manually on the EC2 instance because of the error we got when initializing the Spark object.
+
+```bash
+~sudo yum install java-1.8.0
+~sudo yum remove java-1.7.0-openjdk
+```
 
 <br />
 
