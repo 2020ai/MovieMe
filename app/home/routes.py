@@ -21,10 +21,10 @@ def getRatings():
     if request.method == 'GET':
         return render_template('login.html')
     elif request.method == 'POST':
-        movie_name_dict = {318:"Shawshank Redemption, The (1994)", 858:'Godfather, The (1972)' , 58559:'Dark Knight, The (2008)', 
-        7153:'Lord of the Rings: The Return of the King, The (2003)', 527:'Schindler\'s List (1993)', 79132:'Inception (2010)',
+        movie_name_dict = {318:"Shawshank Redemption  The (1994)", 858:'Godfather  The (1972)' , 58559:'Dark Knight  The (2008)', 
+        7153:'Lord of the Rings: The Return of the King  The (2003)', 527:'Schindler\'s List (1993)', 79132:'Inception (2010)',
         356:'Forrest Gump (1994)', 1196:'Star Wars: Episode V - The Empire Strikes Back (1980)', 2324:'Life Is Beautiful (La Vita è bella) (1997)',
-        364:'Lion King, The (1994)', 5995:'Pianist, The (2002)', 2959:'Fight Club (1999)'}
+        364:'Lion King  The (1994)', 5995:'Pianist  The (2002)', 2959:'Fight Club (1999)'}
 
         movie_id_dict = {'Movie1': 318, 'Movie2': 858, 'Movie3': 58559,
                          'Movie4': 7153, 'Movie5': 527, 'Movie6': 79132, 'Movie7': 356,
