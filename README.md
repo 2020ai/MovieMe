@@ -4,9 +4,9 @@
 
 ## Description
 
-MovieMe is an end-to-end Recommender System web application using Apache Spark, Flask, and Elastic Beanstalk using the [MovieLens](https://movielens.org/)  dataset and collaborative filtering with Spark's Alternating Least Saqures implementation. The app can be accessed from the following link: http://movieme.eba-xeb4i3qf.us-east-2.elasticbeanstalk.com/
+MovieMe is an end-to-end Recommender System web application using Apache Spark, Flask, and Elastic Beanstalk using the [MovieLens](https://movielens.org/)  dataset and collaborative filtering with Spark's Alternating Least Squares implementation. The app can be accessed from the following link: http://movieme.eba-xeb4i3qf.us-east-2.elasticbeanstalk.com/
 
-
+We defined a timeline of two weeks for the whole project from end to end. 
 
 <table>
   <tr>
@@ -24,7 +24,7 @@ MovieMe is an end-to-end Recommender System web application using Apache Spark, 
      <td></td>
   </tr>
   <tr>
-    <td><img src="app/base/static/assets/imgages/screencapture-movieme-page2.png" ></td>
+    <td><img src="app/base/static/assets/images/screencapture-movieme-page2.png" ></td>
   </tr>
  </table>
 
