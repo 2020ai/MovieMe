@@ -38,9 +38,18 @@ This Readme file has the following sections:
 
 ## 1. Project Organization <a id='ProjectOrganization'></a>
 
-### 1.1. 
+The pipeline is written as a Python module named MovieMe which is located under app/home directory. This module contains all the necessary functionality from reading the data to building the recommender system and predicting the results.
 
+Here is the different parts of the MovieMe module:
 
+### 1.1. Spark Context Initialization and Reading data
+
+### 1.2. Counting and Averaging Movies' Ratings
+`ratings_count_avg` method
+### 1.3. Training the Recommender System Model
+`train_recommender` and `predict_recommender` methods
+### 1.4. Adding New User's Ratings and Making Prediction  
+`add_new_user_ratings` and `predict_top_ratings` methods
 
 
 <br />
